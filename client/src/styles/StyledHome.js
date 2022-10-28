@@ -29,7 +29,8 @@ const StyledHome = styled.div`
     :hover {
       background: #dce7f5;
     }
-  }submit {
+  }
+  submit {
     width: 300px;
     height: 40px;
   }

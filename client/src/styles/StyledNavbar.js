@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 const StyledNavbar = styled.div`
   height: 45px;
@@ -14,7 +14,7 @@ const StyledNavbar = styled.div`
     white-space: normal;
     float: right;
     outline: 0;
-   }
+  }
 `;
 
 export default StyledNavbar;

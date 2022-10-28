@@ -1,6 +1,4 @@
-import styled from 'styled-components/macro';
-
-
+import styled from "styled-components/macro";
 
 const StyledAPIExplorer = styled.div`
   display: flex;
@@ -22,7 +20,7 @@ const StyledAPIExplorer = styled.div`
     flex-direction: column;
     gap: 20px;
   }
-  
+
   background-color: #9c9ca0;
 
   table {
@@ -74,9 +72,8 @@ const StyledAPIExplorer = styled.div`
     height: 40px;
   }
 
-
   .response {
-    display:flex;
+    display: flex;
     justify-items: right;
     width: 450px;
     height: 400px;

@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addConfig } from '../store/config';
-import { StyledHome } from '../styles';
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addConfig } from "../store/config";
+import { StyledHome } from "../styles";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(
-      addConfig(JSON.parse(configOptions.replace(/(\r\n|\n|\r)/gm, '')))
+      addConfig(JSON.parse(configOptions.replace(/(\r\n|\n|\r)/gm, "")))
     );
   };
 
@@ -25,30 +25,30 @@ const Home = () => {
   let example = {
     configOptions: [
       {
-        title: 'Get users',
-        url: 'https://jsonplaceholder.typicode.com/users/1',
-        method: 'GET',
+        title: "Get users",
+        url: "https://jsonplaceholder.typicode.com/users/1",
+        method: "GET",
       },
       {
-        title: 'Create new user',
-        url: 'https://jsonplaceholder.typicode.com/users',
-        method: 'POST',
+        title: "Create new user",
+        url: "https://jsonplaceholder.typicode.com/users",
+        method: "POST",
         body: [
           {
-            name: 'Email',
-            type: 'email',
+            name: "Email",
+            type: "email",
             max: 24,
             min: 3,
           },
           {
-            name: 'Full-Name',
-            type: 'text',
-            placeholder: 'John Doe',
+            name: "Full-Name",
+            type: "text",
+            placeholder: "John Doe",
             required: true,
           },
           {
-            name: 'Phone',
-            type: 'tel',
+            name: "Phone",
+            type: "tel",
           },
         ],
       },
@@ -73,8 +73,8 @@ const Home = () => {
       </form>
       <div className="instructions">
         Use this button to copy API configuration to the text block above.
-        </div>
-       
+      </div>
+
       <div className="example">
         <pre>{HomeExample}</pre>
       </div>

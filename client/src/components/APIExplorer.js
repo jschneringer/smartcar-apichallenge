@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { StyledAPIExplorer } from '../styles';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { StyledAPIExplorer } from "../styles";
 
-// The APIExplorer component is a reused component for any number of configuration options.
 const APIExplorer = ({ config }) => {
   // bodyParams are the input values from user
   const [bodyParams, setBodyParams] = useState({});
@@ -25,7 +24,7 @@ const APIExplorer = ({ config }) => {
     e.preventDefault();
 
     // Custom axios requests depending on the method
-    if (config.method === 'GET') {
+    if (config.method === "GET") {
       axios(config.url)
         .then((response) => {
           setAPIResponse(response.data);
@@ -33,7 +32,7 @@ const APIExplorer = ({ config }) => {
         .catch((error) => {
           console.log(error);
         });
-    } else if (config.method === 'POST') {
+    } else if (config.method === "POST") {
       axios
         .post(config.url, bodyParams)
         .then((response) => {
@@ -42,7 +41,7 @@ const APIExplorer = ({ config }) => {
         .catch((error) => {
           console.log(error);
         });
-    } else if (config.method === 'PUT') {
+    } else if (config.method === "PUT") {
       axios
         .put(config.url, bodyParams)
         .then((response) => {
@@ -51,7 +50,7 @@ const APIExplorer = ({ config }) => {
         .catch((error) => {
           console.log(error);
         });
-    } else if (config.method === 'PATCH') {
+    } else if (config.method === "PATCH") {
       axios
         .patch(config.url, bodyParams)
         .then((response) => {
@@ -60,7 +59,7 @@ const APIExplorer = ({ config }) => {
         .catch((error) => {
           console.log(error);
         });
-    } else if (config.method === 'DELETE') {
+    } else if (config.method === "DELETE") {
       axios
         .delete(config.url, bodyParams)
         .then((response) => {
@@ -71,7 +70,7 @@ const APIExplorer = ({ config }) => {
         });
     } else {
       setAPIResponse(
-        'API Explorer only supports the following HTTP methods: GET, POST, PUT, PATCH, DELETE'
+        "API Explorer only supports the following HTTP methods: GET, POST, PUT, PATCH, DELETE"
       );
     }
   };
@@ -101,7 +100,7 @@ const APIExplorer = ({ config }) => {
             <div key={key}>
               <label htmlFor={attribute.name}>
                 {attribute.required
-                  ? attribute.name + ' (required)'
+                  ? attribute.name + " (required)"
                   : attribute.name}
               </label>
               <input {...attribute} onChange={handleChange}></input>
