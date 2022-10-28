@@ -9,4 +9,22 @@
 <li>Styled Components</li>
 <li>Redux toolkit</li>
 
+<h2>Installation</h2>
+Clone project and cd client
 
+```
+npm install
+```
+
+Run the following command, and start on port 3000.
+
+```
+npm run start
+```
+
+<h2>GitHub Repo Link</h2>
+<li>https://github.com/jschneringer/smartcar-apichallenge</li>
+
+
+<h2>API Screenshot</h2>
+<img src="/client/public/images/apiscreenshot.png" alt="Alt text" title="Optional title">
