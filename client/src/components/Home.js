@@ -6,15 +6,14 @@ import { StyledHome } from '../styles';
 const Home = () => {
   const dispatch = useDispatch();
 
-  // configOptions stores the text from the main textArea element
+  // stores user input
   const [configOptions, setConfigOptions] = useState(null);
 
-  // Sets configOptions with textArea element value input from user
+  // pulls value
   const handleChange = (e) => {
     setConfigOptions(e.target.value);
   };
 
-  // When user submits, we set the config state in our redux store with the object in JSON format
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(
@@ -56,7 +55,7 @@ const Home = () => {
     ],
   };
   // Allows for the example to display nicely on webpage
-  let prettyExample = JSON.stringify(example, null, 2);
+  let HomeExample = JSON.stringify(example, null, 2);
 
   return (
     <StyledHome>
@@ -77,7 +76,7 @@ const Home = () => {
         </div>
        
       <div className="example">
-        <pre>{prettyExample}</pre>
+        <pre>{HomeExample}</pre>
       </div>
       <a href="/smartcar-api-explorer/">
         <button id="reset-button">Reset</button>
