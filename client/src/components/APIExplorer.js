@@ -93,11 +93,6 @@ const APIExplorer = ({ config }) => {
           </tbody>
         </table>
       </div>
-<<<<<<< HEAD
-      {/* If config has a body, there are input fields to be made. */}
-=======
-
->>>>>>> 18fa2d9 (continued debugging and styling)
       {config.body && (
         <form onSubmit={handleSubmit}>
           {/* mapping through submission to pull specific attributes*/}
@@ -112,11 +107,7 @@ const APIExplorer = ({ config }) => {
             </div>
           ))}
           <button type="submit" className="submit-button">
-<<<<<<< HEAD
-            Send Request!
-=======
             Send Request
->>>>>>> 18fa2d9 (continued debugging and styling)
           </button>
         </form>
       )}
@@ -134,10 +125,7 @@ const APIExplorer = ({ config }) => {
         <button className="reset-button">Reset API</button>
       </a>
     </StyledAPIExplorer>
-<<<<<<< HEAD
-=======
     //Reset API
->>>>>>> 18fa2d9 (continued debugging and styling)
   );
 };
 
