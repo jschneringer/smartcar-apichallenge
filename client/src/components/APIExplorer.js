@@ -93,11 +93,7 @@ const APIExplorer = ({ config }) => {
           </tbody>
         </table>
       </div>
-<<<<<<< HEAD
       {/* If config has a body, there are input fields to be made. */}
-=======
-      {/* config outputs on submission*/}
->>>>>>> main
       {config.body && (
         <form onSubmit={handleSubmit}>
           {/* Map through config body array and create input fields accordingly */}
@@ -112,11 +108,7 @@ const APIExplorer = ({ config }) => {
             </div>
           ))}
           <button type="submit" className="submit-button">
-<<<<<<< HEAD
             Send Request!
-=======
-            Send Request
->>>>>>> main
           </button>
         </form>
       )}
@@ -130,19 +122,10 @@ const APIExplorer = ({ config }) => {
       <div className="response">
         <pre>{APIResponse && JSON.stringify(APIResponse, null, 2)}</pre>
       </div>
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> main
       <a href="/smartcar-api-explorer/">
         <button className="reset-button">Reset API Explorer</button>
       </a>
     </StyledAPIExplorer>
-<<<<<<< HEAD
-=======
-    //Reset API
->>>>>>> main
   );
 };
 
