@@ -6,9 +6,9 @@ const StyledNavbar = styled.div`
   background-color: #c2ebd9;
   position: fixed;
   z-index: 1;
-  .sideBarItems {
+  .NavBarItems {
     align-items: baseline;
-    padding: 8px 16px;
+    padding: 12px 8px;
     text-align: right;
     border: none;
     white-space: normal;

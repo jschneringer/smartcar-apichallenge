@@ -7,7 +7,7 @@ const StyledAPIExplorer = styled.div`
   flex-direction: column;
   place-items: center;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   background-color: white;
   #component-title {
     font-size: 36px;
@@ -20,11 +20,10 @@ const StyledAPIExplorer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
   
-  background-color: #9c9ca0;
-
+  
   table {
     tr td:first-child {
       font-weight: 500;
@@ -73,8 +72,6 @@ const StyledAPIExplorer = styled.div`
     width: 500px;
     height: 40px;
   }
-
-
   .response {
     display:flex;
     justify-items: right;
@@ -89,6 +86,8 @@ const StyledAPIExplorer = styled.div`
   #reset-button {
     width: 300px;
     height: 40px;
+    margin-bottom: 50px;
+
   }
 `;
 

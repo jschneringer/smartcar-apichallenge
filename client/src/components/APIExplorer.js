@@ -2,19 +2,18 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { StyledAPIExplorer } from '../styles';
 
-// The APIExplorer component is a reused component for any number of configuration options.
+
 const APIExplorer = ({ config }) => {
-  // bodyParams are the input values from user
+  // bodyParams are the input values from user, APIresponse pull data
   const [bodyParams, setBodyParams] = useState({});
   const [APIResponse, setAPIResponse] = useState(null);
 
-  // Clears APIResponse when going to another request page
+  // clears page
   useEffect(() => {
     setAPIResponse(null);
   }, [config]);
 
-  // Sets bodyParams state according to user's input.
-  // bodyParams is an object with a key: "value" pair representing inputName: "value".
+
   const handleChange = (e) => {
     const value = e.target.value;
     setBodyParams({ ...bodyParams, [e.target.name]: value });
@@ -22,9 +21,10 @@ const APIExplorer = ({ config }) => {
 
   // Handles form submission for API Request. Uses the URL from the user's configuration option to send request
   const handleSubmit = (e) => {
+   
     e.preventDefault();
 
-    // Custom axios requests depending on the method
+    // using axios to perform CRUD requests
     if (config.method === 'GET') {
       axios(config.url)
         .then((response) => {
@@ -93,10 +93,14 @@ const APIExplorer = ({ config }) => {
           </tbody>
         </table>
       </div>
+<<<<<<< HEAD
       {/* If config has a body, there are input fields to be made. */}
+=======
+
+>>>>>>> 18fa2d9 (continued debugging and styling)
       {config.body && (
         <form onSubmit={handleSubmit}>
-          {/* Map through config body array and create input fields accordingly */}
+          {/* mapping through submission to pull specific attributes*/}
           {config.body.map((attribute, key) => (
             <div key={key}>
               <label htmlFor={attribute.name}>
@@ -108,7 +112,11 @@ const APIExplorer = ({ config }) => {
             </div>
           ))}
           <button type="submit" className="submit-button">
+<<<<<<< HEAD
             Send Request!
+=======
+            Send Request
+>>>>>>> 18fa2d9 (continued debugging and styling)
           </button>
         </form>
       )}
@@ -123,9 +131,13 @@ const APIExplorer = ({ config }) => {
         <pre>{APIResponse && JSON.stringify(APIResponse, null, 2)}</pre>
       </div>
       <a href="/smartcar-api-explorer/">
-        <button className="reset-button">Reset API Explorer</button>
+        <button className="reset-button">Reset API</button>
       </a>
     </StyledAPIExplorer>
+<<<<<<< HEAD
+=======
+    //Reset API
+>>>>>>> 18fa2d9 (continued debugging and styling)
   );
 };
 

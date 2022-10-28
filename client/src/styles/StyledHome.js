@@ -63,8 +63,9 @@ const StyledHome = styled.div`
   }
   #reset-button {
     width: 300px;
-    height: 40px;
+    height: 40px;    
     margin-bottom: 50px;
+
   }
 `;
 
