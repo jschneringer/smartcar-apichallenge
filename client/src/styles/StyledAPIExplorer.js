@@ -60,12 +60,14 @@ const StyledAPIExplorer = styled.div`
     outline: none;
     cursor: pointer;
     border-radius: 5px;
-    padding: 13px 23px;
+    padding: 11px 23px;
     border: 1px solid #222222;
     font-size: 14px;
-    background: #f2f5fa;
+    font-weight: bold;
+    color: white;
+    background: #383c74;
     :hover {
-      background: #dce7f5;
+      background: #2b819d;
     }
   }
   .submit-button {
