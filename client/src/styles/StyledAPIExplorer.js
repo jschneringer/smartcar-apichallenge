@@ -7,7 +7,7 @@ const StyledAPIExplorer = styled.div`
   flex-direction: column;
   place-items: center;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
   background-color: white;
   #component-title {
     font-size: 36px;
@@ -20,10 +20,11 @@ const StyledAPIExplorer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
   
-  
+  background-color: #9c9ca0;
+
   table {
     tr td:first-child {
       font-weight: 500;
@@ -60,20 +61,20 @@ const StyledAPIExplorer = styled.div`
     outline: none;
     cursor: pointer;
     border-radius: 5px;
-    padding: 11px 23px;
+    padding: 13px 23px;
     border: 1px solid #222222;
     font-size: 14px;
-    font-weight: bold;
-    color: white;
-    background: #383c74;
+    background: #f2f5fa;
     :hover {
-      background: #2b819d;
+      background: #dce7f5;
     }
   }
   .submit-button {
     width: 500px;
     height: 40px;
   }
+
+
   .response {
     display:flex;
     justify-items: right;
@@ -88,8 +89,6 @@ const StyledAPIExplorer = styled.div`
   #reset-button {
     width: 300px;
     height: 40px;
-    margin-bottom: 50px;
-
   }
 `;
 

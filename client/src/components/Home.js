@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addConfig } from '../store/config';
 import { StyledHome } from '../styles';
-import React from 'react';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -26,12 +25,12 @@ const Home = () => {
   let example = {
     configOptions: [
       {
-        title: 'Get Users',
+        title: 'Get users',
         url: 'https://jsonplaceholder.typicode.com/users/1',
         method: 'GET',
       },
       {
-        title: 'Create New User',
+        title: 'Create new user',
         url: 'https://jsonplaceholder.typicode.com/users',
         method: 'POST',
         body: [
@@ -55,7 +54,7 @@ const Home = () => {
       },
     ],
   };
-  // Example config for copy and paste
+  // Allows for the example to display nicely on webpage
   let HomeExample = JSON.stringify(example, null, 2);
 
   return (
@@ -73,7 +72,7 @@ const Home = () => {
         <button id="submit">Execute</button>
       </form>
       <div className="instructions">
-        Copy the code below and paste above execution button.
+        Use this button to copy API configuration to the text block above.
         </div>
        
       <div className="example">

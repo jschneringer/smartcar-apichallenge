@@ -6,7 +6,7 @@ const StyledHome = styled.div`
   place-items: center;
   align-items: center;
   gap: 15px;
-  background-color: #faf5e7;
+  background-color: #005a46;
   .title {
     margin-top: 50px;
     margin-bottom: 25px;
@@ -22,17 +22,15 @@ const StyledHome = styled.div`
     outline: none;
     cursor: pointer;
     border-radius: 5px;
-    padding: 11px 23px;
+    padding: 13px 23px;
     border: 1px solid #222222;
     font-size: 14px;
-    font-weight: bold;
-    color: white;
-    background: #383c74;
+    background: #f2f5fa;
     :hover {
-      background: #2b819d;
+      background: #dce7f5;
     }
   }submit {
-    width: 500px;
+    width: 300px;
     height: 40px;
   }
   form {
@@ -54,20 +52,19 @@ const StyledHome = styled.div`
   .example {
     width: 500px;
     height: 500px;
-    background-color: #383c74;
+    background-color: #3d3d3d;
     align-items: center;
     color: white;
     font-family: monospace;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 12px;
     border: 1px solid grey;
   }
   #reset-button {
     width: 300px;
-    height: 40px;    
+    height: 40px;
     margin-bottom: 50px;
-
   }
 `;
 
