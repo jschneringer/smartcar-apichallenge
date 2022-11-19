@@ -9,7 +9,7 @@ const Home = () => {
   // stores user input
   const [configOptions, setConfigOptions] = useState(null);
 
-  // pulls value
+  // pulls value yea
   const handleChange = (e) => {
     setConfigOptions(e.target.value);
   };
@@ -19,7 +19,7 @@ const Home = () => {
     dispatch(
       addConfig(JSON.parse(configOptions.replace(/(\r\n|\n|\r)/gm, "")))
     );
-  };
+  }
 
   // Example of configOptions for user to see and mimic
   let example = {
